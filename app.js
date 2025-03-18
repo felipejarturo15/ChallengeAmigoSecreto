@@ -1,21 +1,18 @@
-let amigos = [] //definicion de una lista vacia para almacenar los nombres delos amigos
+let amigos = []; //definicion de una lista vacia para almacenar los nombres delos amigos
 
 let titulo = document.querySelector('h1');
 titulo.innerHTML = 'Juego del Amigo Secreto'
 
-let parrafo = document.querySelector('p');
-parrafo.innerHTML = 'indica un numero del 1 al 10'
-
 // definicion de la funcion que agrega los nombres de los amigos
 function agregarAmigo() {
-    let amigoAgregado = document.getElementById("amigo").value;
+    let nombreAmigo = document.getElementById("amigo").value;
     
     if (nombreAmigo === "") {
-        elert("Por favor, inserte un nombre valido.");
+        alert("Por favor, inserte un nombre valido.");
         return;
     }
 
-    amigos.push(nombreAmigo); //actualizar el aarayy de amigos
+amigos.push(nombreAmigo); //actualizar el aarayy de amigos
 document.getElementById("amigo").value = "";
 actualizarListaAmigos();
 
@@ -35,14 +32,14 @@ function actualizarListaAmigos() {
 
 // defincion de la funcion que sortea los nombres de los amigos
 function sortearAmigo() {
-    if (amigos.lenght === 0) {
-        alert("Por favor, agregue amigos validos antes de sortear.");
+    if (amigos.length === 0) {
+        alert("Por favor, agregue amigos válidos antes de sortear.");
         return;
     }
 
-    let indiceAleatorio = Math.floor(Math.random() * amigos.lenght);
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
     let amigoSorteado = amigos[indiceAleatorio];
-    document.getElementById("resultado").innerHTML = `<li>Amigo sorteado: ${amigoSorteado}</li>`;
+    document.getElementById("resultado").innerHTML = `<li>El Amigo Secreto sorteado es: ${amigoSorteado}</li>`;
 }
 
 //Listo :), fin del codigo

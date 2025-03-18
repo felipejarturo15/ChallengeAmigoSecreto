@@ -56,4 +56,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 [Arturo Felipe J.] - [felipejarturo15@gmail.com]
 
-¡Espero que disfrutes usando esta aplicación de Amigo Secreto!
+¡Espero que disfrutes usando esta aplicación de Amigo Secreto! 😊

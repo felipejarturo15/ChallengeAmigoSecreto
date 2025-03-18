@@ -31,3 +31,18 @@ function actualizarListaAmigos() {
         listaAmigos.appendChild(elementoLista);
     }
 }
+
+// defincion de la funcion que sortea los nombres de los amigos
+function sortearAmigo() {
+    if (amigos.lenght === 0) {
+        alert("Por favor, agregue amigos antes de sortear.");
+        return;
+    }
+
+    let indiceAleatorio = Math.floor(Math.random() * amigos.lenght);
+    let amigoSorteado = amigos[indiceAleatorio];
+    document.getElementById("resultado").innerHTML = `<li>Amigo sorteado: ${amigoSorteado}</li>`;
+}
+
+//Listo :), fin del codigo
+// Hecho por Arturo Felipe Jacinto :))

@@ -20,3 +20,14 @@ document.getElementById("amigo").value = "";
 actualizarListaAmigos();
 
 }
+
+//definicion de la funcion que actualiza la lista de los amigos insertados en el input
+function actualizarListaAmigos() {
+    let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = "";
+
+    for (let amigo of amigos) {
+        let elementoLista.textContent = amigo;
+        listaAmigos.appendChild(elementoLista);
+    }
+}

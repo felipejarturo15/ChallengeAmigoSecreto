@@ -27,7 +27,8 @@ function actualizarListaAmigos() {
     listaAmigos.innerHTML = "";
 
     for (let amigo of amigos) {
-        let elementoLista.textContent = amigo;
+        let elementoLista = document.createElement("li");
+        elementoLista.textContent = amigo;
         listaAmigos.appendChild(elementoLista);
     }
 }
@@ -35,7 +36,7 @@ function actualizarListaAmigos() {
 // defincion de la funcion que sortea los nombres de los amigos
 function sortearAmigo() {
     if (amigos.lenght === 0) {
-        alert("Por favor, agregue amigos antes de sortear.");
+        alert("Por favor, agregue amigos validos antes de sortear.");
         return;
     }
 
